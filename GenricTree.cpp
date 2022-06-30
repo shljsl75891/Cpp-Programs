@@ -85,7 +85,7 @@ protected:
         }
     }
     void delete(TreeNode* t) {
-        int size = t->children.size;
+        int size = t->children.size();
         for(int i = 0; i < size; i++) {
             delete(t->children[i]);
         } delete t;
