@@ -88,6 +88,11 @@ int fibonacci(int n) {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
+int hcf(int a, int b) {
+    if (b == 0) return a;
+    return hcf(b, a % b);
+}
+
 // print n to 1 in decreasing order
 void printDecreasing(int n) {
     if (n == 0) {
