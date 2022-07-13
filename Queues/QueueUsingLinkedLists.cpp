@@ -47,7 +47,7 @@ public:
 };
 
 int choice() {
-    cout << "1.Insert Data in queue\n2. Delete Data\n";
+    cout << "1.Insert Data in queue\n2. Delete Data\n3. Exit\n";
     cout << "Enter your choice: ";
     int choice; cin >> choice;
     return choice;
@@ -65,12 +65,12 @@ int main() {
                 cin >> data;
                 Q.insertData(data);
                 break;
-            }
-            case 2: {
+            } case 2: {
                 Q.deleteData();
                 break;
-            }
-            default: {
+            } case 3: {
+                exit(0);
+            } default: {
                 cout << "Invalid Choice";
             }
         }
