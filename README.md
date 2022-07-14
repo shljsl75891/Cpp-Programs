@@ -1,3 +1,2 @@
 # C-Programs
-These are C++ Programs
-I am working on it still now
+These are C++ Programs for Data Structures (Still Incomplete)
