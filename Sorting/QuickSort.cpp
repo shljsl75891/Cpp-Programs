@@ -5,7 +5,7 @@ int Quick(int arr[], int left, int right) {
     int pivot = left;
     while(true) {
         while(left < right && arr[pivot] <= arr[right]) {
-            right--;
+            right--; 
         }
         if(left == right) {
             break;
@@ -15,7 +15,7 @@ int Quick(int arr[], int left, int right) {
             pivot = right;
         }
         while(left < right && arr[pivot] > arr[left]) {
-            left++;
+            left++; 
         }
         if(left == right) {
             break;
@@ -35,4 +35,15 @@ void QuickSort(int arr[], int left, int right) {
     if(right - 1 > pivot) {
         QuickSort(arr, pivot + 1, right);
     }
+}
+
+int main() {
+    int n; cin >> n;
+    int *arr = new int[n];
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    } QuickSort(arr, 0, n - 1);
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    } 
 }
