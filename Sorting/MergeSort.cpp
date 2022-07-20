@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-int cnt = 0;
 
 void Merge(int *arr, int mid, int low, int high) {
     int i, j, k, left[mid - low + 1], right[high - mid];
@@ -9,17 +8,14 @@ void Merge(int *arr, int mid, int low, int high) {
     } for(j = 0; j < high - mid; j++) {
         right[j] = arr[j + mid + 1];
     } for(k = low, i = 0, j = 0; i < mid - low + 1 && j < high - mid; k++) {
-        cnt++;
         if(left[i] <= right[j]) {
             arr[k] = left[i++];
         } else {
             arr[k] = right[j++];
         }
     } while(i < mid - low + 1) {
-        cnt++;
         arr[k++] = left[i++];
     } while(j < high - mid) {
-        cnt++;
         arr[k++] = right[j++];
     }
 }
