@@ -1,5 +1,5 @@
 /* 3 Basic Steps to approach 
-* Optimal Solution Using DYNAMIC PROGRAMMIN
+* Optimal Solution Using DYNAMIC PROGRAMMING
 * Top-Down -> Recursion + Memoization(storing the solution of overlapping subproblems)
 * Botton-Up -> Tabulation
 * Space Optimization -> here we need, Brain Storming
