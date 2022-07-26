@@ -7,7 +7,7 @@ void heapify(int *arr, int size, int index) {
     if(left < size && arr[largest] < arr[left]) {
         largest = left;
     } if(right < size && arr[largest] < arr[right]) {
-        largest = right
+        largest = right;
     } if(largest != index) {
         swap(arr[largest], arr[index]);
         heapify(arr, size, largest);
