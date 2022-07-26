@@ -6,7 +6,7 @@ vector<string> getSubSeq(string s) {
         return {" "};
     }
     vector<string> rresult = getSubSeq(s.substr(1));
-    vector<string> finalResult
+    vector<string> finalResult;
     for (string i : rresult) {
         finalResult.push_back(i);
     }
