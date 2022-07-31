@@ -11,7 +11,7 @@ int main() {
     sieve[0] = sieve[1] = true;
     for(int i = 2; i <= n; i++) {
         if(sieve[i] == false) {
-            for(int j = i * 2; j <= n; j += i) {
+            for(int j = i * 2; j <= n; j += i) 
                 sieve[j] = true;
             }
         }
