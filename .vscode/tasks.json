@@ -3,7 +3,7 @@
         {
             "type": "shell",
             "label": "C/C++: g++.exe run and execute",
-            "command": "C:\\MinGW\\bin\\g++.exe -g3 ${file} && a.exe < in.txt > out.txt",
+            "command": "C:\\MinGW\\bin\\g++.exe \"${file}\"; Start-Process \"a.exe\" -RedirectStandardInput in.txt -RedirectStandardOutput out.txt -NoNewWindow",
             "options": {
                 "cwd": "${fileDirname}"
             },
@@ -19,7 +19,7 @@
         {
             "type": "shell",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:\\MinGW\\bin\\g++.exe -g3 ${file}",
+            "command": "C:\\MinGW\\bin\\g++.exe -g3 \"${file}\"",
             "options": {
                 "cwd": "${fileDirname}"
             },
